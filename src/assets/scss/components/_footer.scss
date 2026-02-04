@@ -1,0 +1,144 @@
+.footer {
+  background-color: #1a1f28;
+  color: #ffffff;
+  padding: 80px 0 40px;
+
+  &__signup-row {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 40px;
+    margin-bottom: 60px;
+  }
+
+  &__signup-title {
+    font-weight: 800;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    letter-spacing: 0.5px;
+    color: white;
+  }
+
+  &__signup-text {
+    font-size: 0.9rem;
+    color: white;
+  }
+
+  &__form {
+    input {
+      background: #ffffff;
+      border: none;
+      height: 50px;
+      padding-left: 20px;
+      font-size: 0.85rem;
+    }
+
+    .footer__submit {
+      background: #1a1f28;
+      border: 3px solid #ffffff;
+      color: #ffffff;
+      padding: 0 30px;
+      font-weight: 900;
+      height: 50px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: #ffffff;
+        color: #1a1f28;
+      }
+    }
+  }
+
+  &__logo-mini {
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 25px;
+  }
+
+  &__social-icons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 2.5rem;
+
+    img {
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  &__link-title {
+    font-size: 1rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+  }
+
+  &__link-list {
+    li {
+      margin-bottom: 10px;
+      a {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 0.9rem;
+        text-decoration: none;
+
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+  &__bottom-row {
+    margin-top: 40px;
+  }
+
+  &__disclaimer {
+    font-size: 0.7rem;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.4);
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.02);
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  &__copyright {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.4);
+    margin-bottom: 0;
+    padding-bottom: 5px;
+  }
+}
+
+// Ensure columns stack properly on mobile
+@media screen and (max-width: 639px) {
+  .footer {
+    &__signup-row .cell {
+      margin-bottom: 3rem;
+    }
+
+    &__bottom-row {
+      flex-direction: column-reverse; // Puts disclaimer above copyright on mobile
+      text-align: center;
+    }
+
+    &__social-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__link-title,
+    &__link-list {
+      text-align: center;
+    }
+
+    &__disclaimer {
+      margin-bottom: 30px;
+      max-width: 100%;
+    }
+    &__copyright {
+      text-align: center;
+    }
+  }
+}

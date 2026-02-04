@@ -1,0 +1,106 @@
+.fan-testimonials {
+  padding: 5rem 0;
+  background-color: #f4f7f9;
+
+  &__main-title {
+    font-weight: 800;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    font-family: "Inter", sans-serif;
+  }
+}
+
+.fan-card {
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+
+  &__video-wrapper {
+    position: relative;
+    aspect-ratio: 9 / 16; // Vertical format seen in images
+    overflow: hidden;
+    background: #000;
+  }
+
+  &__thumb {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; // Scales image to fill whole area
+    display: block;
+  }
+
+  &__mute-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    z-index: 1;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+
+  &__play-btn {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+    color: #222;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  &__footer {
+    position: absolute; // Floats footer over the image
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff; // Solid white background
+    border-radius: 18px;
+    z-index: 2;
+  }
+
+  &__product-name {
+    font-weight: 800;
+    font-size: 0.8rem;
+    margin: 0;
+    color: #002657;
+  }
+
+  &__price {
+    font-size: 0.75rem;
+    color: #343c3e;
+  }
+
+  &__add-btn {
+    background: #222;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 0.5rem 1.2rem;
+    font-weight: 800;
+    font-size: 0.7rem;
+    cursor: pointer;
+  }
+}

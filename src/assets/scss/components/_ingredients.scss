@@ -1,0 +1,73 @@
+.ingredients {
+  padding: 5rem 0;
+  background-color: #f4f7f9; // Light blue tint
+
+  &__title {
+    font-weight: 900;
+    font-size: 2.9rem; // Bold heavy header
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    font-family: "Inter", sans-serif;
+  }
+
+  &__badge {
+    display: inline-block;
+    background-color: $brand-yellow;
+    padding: 1.2rem 1.6rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: black;
+  }
+
+  &__grid {
+    margin-top: 1rem;
+  }
+
+  &__item {
+    margin-bottom: 2.5rem;
+  }
+
+  &__card {
+    display: flex;
+    align-items: center; // Vertically centers text to image
+  }
+
+  &__img {
+    width: 80px; // Slightly smaller to prevent grid breakage
+    height: 80px;
+    border-radius: 18px; // Rounded corners
+    object-fit: cover;
+    margin-right: 1rem;
+    flex-shrink: 0;
+  }
+
+  &__meta {
+    display: flex;
+    flex-direction: column;
+    min-width: 0; // Prevents text from pushing outside the flex container
+  }
+
+  &__name {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 2px;
+    font-weight: 600;
+    white-space: nowrap; // Keeps ingredient name on one line
+  }
+
+  &__product {
+    font-size: 0.6rem;
+    font-weight: 800;
+    color: #a0a0a0;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .ingredients {
+  }
+}

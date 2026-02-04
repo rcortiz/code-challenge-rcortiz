@@ -1,0 +1,52 @@
+.top-bar {
+  .top-bar-right .menu {
+    align-items: center;
+  }
+
+  a {
+    display: block;
+
+    .nav-logo {
+      width: 40px;
+      height: 40px;
+      display: block;
+    }
+  }
+
+  .cart-wrapper {
+    position: relative;
+    a {
+      display: block;
+      padding: 0.5rem 1rem;
+
+      .nav-cart {
+        width: 28px;
+        height: auto;
+        display: block;
+      }
+
+      .cart-count {
+        position: absolute;
+        top: 1px;
+        right: 10px;
+        background: #000;
+        color: #fff;
+        font-family: "Inter", sans-serif;
+        font-size: 10px;
+        font-weight: bold;
+        line-height: 1;
+        padding: 4px;
+        border-radius: 100px;
+        min-width: 18px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+// Ensure columns stack properly on mobile
+@media screen and (max-width: 639px) {
+  .top-bar-right {
+    display: none;
+  }
+}

@@ -1,0 +1,54 @@
+.btn {
+  @include button; // Pulls in Foundation's core functional styles
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 1rem 0;
+  font-family: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  transition:
+    background-color 0.25s ease-out,
+    color 0.25s ease-out,
+    transform 0.1s ease;
+
+  // Active state feel
+  &:active {
+    transform: translateY(1px);
+  }
+
+  // Element Modifier: Shape
+  &--pill {
+    font-size: 18px;
+    border-radius: 100px;
+    padding: 20px 30px;
+    width: 250px;
+    // On mobile, 250px might be too wide. Let's make it responsive:
+    max-width: 100%;
+  }
+
+  // Element Modifier: Yellow Color
+  &--yellow {
+    background-color: #ffb400;
+    color: #000;
+
+    &:hover,
+    &:focus {
+      background-color: #e5a100;
+      color: #000;
+    }
+  }
+
+  // Element Modifier: Navy Color
+  &--navy {
+    background-color: #262c38;
+    color: #fff;
+
+    &:hover,
+    &:focus {
+      background-color: #1a1f28;
+      color: #fff;
+    }
+  }
+}

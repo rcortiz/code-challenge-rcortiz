@@ -1,0 +1,94 @@
+.hero {
+  background: url("../img/Rectangle.png") no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  padding: 140px 0 100px;
+  min-height: 900px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  &__content {
+    max-width: 900px; // Limits text width to prevent awkward long lines
+    z-index: 2;
+  }
+
+  &__title {
+    font-weight: 800;
+    font-size: clamp(2.8rem, 6vw, 3.9rem);
+    line-height: 1.05;
+    margin-bottom: 1.2rem;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    font-family: "Inter", sans-serif;
+    color: white;
+  }
+
+  &__subtitle {
+    letter-spacing: 2px;
+    margin-bottom: 2.5rem;
+    font-size: 0.9rem;
+  }
+
+  &__image-container {
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1;
+  }
+
+  &__image {
+    max-width: 510px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.testimonial {
+  margin-top: 4rem;
+
+  &__stars {
+    width: 90px;
+    margin-bottom: 0.8rem;
+  }
+
+  &__quote {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .hero {
+    &__content {
+      text-align: center;
+    }
+  }
+
+  .testimonial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+}

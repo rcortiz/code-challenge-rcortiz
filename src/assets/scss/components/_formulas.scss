@@ -1,0 +1,132 @@
+.formulas {
+  background-color: #22262a;
+  color: #fff;
+  padding: 6rem 0;
+
+  &__badge {
+    background-color: #ffc107;
+    color: black;
+    padding: 0.3rem 1rem;
+    border-radius: 50px;
+    font-weight: 800;
+    font-size: 0.75rem;
+  }
+
+  &__main-title {
+    font-weight: 800;
+    font-size: clamp(2.5rem, 5vw, 5rem);
+    margin: 1.5rem 0 0.5rem;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    font-family: "Inter", sans-serif;
+    color: white;
+  }
+
+  &__main-subtitle {
+    font-size: 1rem;
+    margin-bottom: 5rem;
+
+    u {
+      text-underline-offset: 6px;
+    }
+  }
+
+  &__row {
+    margin-bottom: 6rem;
+
+    &--reverse {
+      @include breakpoint(medium) {
+        // Uses Foundation order classes to flip layout
+      }
+    }
+  }
+
+  &__item-title {
+    font-weight: 800;
+    font-size: 2.5rem;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    font-family: "Inter", sans-serif;
+    color: white;
+  }
+
+  &__description {
+    font-size: 0.9rem;
+    color: #ccc;
+    line-height: 1.5;
+  }
+
+  &__product-img {
+    max-height: 350px;
+    filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.5));
+  }
+}
+
+.testimonials {
+  margin-top: 8rem;
+
+  &__intro {
+    color: #ffc107;
+    margin-bottom: 3rem;
+  }
+
+  &__card {
+    background: #f4f7f9;
+    color: #222;
+    padding: 2rem;
+    border-radius: 30px;
+    height: 100%;
+  }
+
+  &__stars {
+    margin-bottom: 1rem;
+    height: 15px;
+  }
+
+  &__text {
+    font-size: 0.85rem;
+    margin-bottom: 2rem;
+    color: #4e5675;
+    height: 80px;
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+  }
+
+  &__initials {
+    width: 45px;
+    height: 45px;
+    margin-right: 12px;
+  }
+
+  &__name {
+    display: block;
+    font-weight: 800;
+    font-size: 0.8rem;
+    color: #0a3c7e;
+    letter-spacing: -0.5px;
+    font-family: "Inter", sans-serif;
+  }
+
+  &__title {
+    font-size: 0.65rem;
+    color: #767f97;
+    text-transform: uppercase;
+  }
+}
+
+// Ensure columns stack properly on mobile
+@media screen and (max-width: 639px) {
+  .testimonials {
+    .cell {
+      margin-bottom: 1.5rem;
+    }
+    &__card {
+      margin-bottom: 10px;
+    }
+  }
+}
