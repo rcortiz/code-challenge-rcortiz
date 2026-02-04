@@ -45,6 +45,9 @@
 
 .testimonial {
   margin-top: 4rem;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
 
   &__stars {
     width: 90px;
