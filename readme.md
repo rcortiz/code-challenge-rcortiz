@@ -1,68 +1,49 @@
-# ZURB Template
+# 24-Hour Code Challenge: Static Landing Page
 
-**Please open all issues with this template on the main [Foundation for Sites](https://github.com/foundation/foundation-sites/issues) repo.**
+This repository contains my implementation responsive web shop homepage, completed within a 24-hour window. The project demonstrates modern front-end practices, structured SCSS, and the use of the [**Foundation framework**](https://get.foundation/develop/getting-started.html).
 
-This is the official ZURB Template for use with [Foundation for Sites](https://get.foundation/sites/docs/). We use this template at ZURB to deliver static code to our clients. It has a Gulp-powered build system with these features:
+Please open all issues with this template on the main [**Foundation for Sites**](https://github.com/foundation/foundation-sites/issues) repo. This repository used the official ZURB Template of [**Foundation for Sites**](https://get.foundation/sites/docs/).
 
-- Handlebars HTML templates with Panini
-- Sass compilation and prefixing
-- JavaScript module bundling with webpack
-- Built-in BrowserSync server
-- For production builds:
-  - CSS compression
-  - JavaScript module bundling with webpack
-  - Image compression
+## Technical Stack
+
+- Framework: Foundation for Sites (Responsive grid and UI components)
+- Styling: SCSS (Modular architecture)
+- Build Tools: (Add yours here, e.g., Gulp, Webpack, or Vite)
 
 ## Installation
 
-To use this template, your computer needs:
-
-- [NodeJS](https://nodejs.org/en/) (Version 12 or greater recommended)
-- [Git](https://git-scm.com/)
-
-This template can be installed with the Foundation CLI, or downloaded and set up manually.
-
-### Using the CLI
-
-Install the Foundation CLI with this command:
+To run this project locally, follow these steps:
 
 ```bash
-npm install foundation-cli --global
+git clone https://github.com/rcortiz/code-challenge-rcortiz.git
 ```
 
-Use this command to set up a blank Foundation for Sites project with this template:
+Navigate to the directory:
 
 ```bash
-foundation new --framework sites --template zurb
+cd code-challenge-rcortiz
 ```
 
-The CLI will prompt you to give your project a name. The template will be downloaded into a folder with this name.
-
-Now `cd` to your project name and to start your project run
+Install dependencies:
 
 ```bash
-foundation watch
+npm install
 ```
 
-### Manual Setup
-
-To manually set up the template, first download it with Git:
+Start the local server:
 
 ```bash
-git clone https://github.com/foundation/foundation-zurb-template projectname
+npm start
 ```
 
-Then open the folder in your command line, and install the needed dependencies:
-
-```bash
-cd projectname
-yarn
-```
-
-Finally, run `yarn start` to run Gulp. Your finished site will be created in a folder called `dist`, viewable at this URL:
+Finally, your finished site will be created in a folder called `dist`, viewable at this URL:
 
 ```
 http://localhost:8000
 ```
 
-To create compressed, production-ready assets, run `yarn run build`.
+## Video Walkthrough
+
+As requested, I have recorded a two-part demo of the project:
+
+[**Click here to watch the Video Demo**](URL)
