@@ -1,0 +1,37 @@
+<div class="cell">
+  <div class="fan-card">
+    <div class="fan-card__video-wrapper">
+      <img
+        src="assets/img/{{thumb}}"
+        alt="{{product}} Review"
+        class="fan-card__thumb"
+      />
+      <img
+        src="assets/img/element/mute.svg"
+        alt="Mute"
+        class="fan-card__mute-btn"
+      />
+
+      <div class="fan-card__overlay">
+        <img
+          src="assets/img/element/playbutton.svg"
+          alt="Play"
+          class="fan-card__play-btn"
+        />
+      </div>
+
+      <div class="fan-card__footer">
+        <div class="fan-card__info">
+          <img
+            src="assets/img/stars-2.svg"
+            alt="Rating"
+            class="fan-card__stars"
+          />
+          <h4 class="fan-card__product-name">{{product}}</h4>
+          <span class="fan-card__price">{{price}}</span>
+        </div>
+        {{> buttons label="ADD" color="btn--black" size="btn--sm" }}
+      </div>
+    </div>
+  </div>
+</div>

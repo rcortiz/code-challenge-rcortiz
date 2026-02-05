@@ -1,0 +1,23 @@
+- name: "Hyaluronic Acid"
+  product: "All Day Moisturizer"
+  image: "Bitmap-3.jpg"
+
+- name: "Niacinamide"
+  product: "All Day Moisturizer"
+  image: "Bitmap-5.jpg"
+
+- name: "Bamboo Charcoal"
+  product: "All Day Moisturizer"
+  image: "Bitmap-8.jpg"
+
+- name: "Centella Asiatica"
+  product: "Charcoal Cleanser"
+  image: "Bitmap-4.jpg"
+
+- name: "Rose Oil"
+  product: "Charcoal Cleanser"
+  image: "Bitmap-6.jpg"
+
+- name: "Bamboo Charcoal"
+  product: "Charcoal Cleanser"
+  image: "Bitmap-7.jpg"

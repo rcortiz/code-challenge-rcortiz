@@ -1,0 +1,16 @@
+<section class="ingredients">
+  <div class="grid-container">
+    <div class="grid-x grid-padding-x">
+      <div class="cell">
+        <h2 class="ingredients__title">
+          Best-in-class<br />ingredients that work
+        </h2>
+        <span class="ingredients__badge">Full Ingredient List</span>
+      </div>
+    </div>
+
+    <div class="grid-x grid-padding-x small-up-1 medium-up-3 ingredients__grid">
+      {{#each ingredients}} {{> ingredient-card this}} {{/each}}
+    </div>
+  </div>
+</section>

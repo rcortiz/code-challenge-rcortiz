@@ -1,0 +1,41 @@
+.ingredients {
+  &__item {
+    margin-bottom: 2.5rem;
+  }
+
+  &__card {
+    display: flex;
+    align-items: center; // Vertically centers text to image
+  }
+
+  &__img {
+    width: 80px;
+    height: 80px;
+    border-radius: 18px;
+    object-fit: cover;
+    margin-right: 1rem;
+    flex-shrink: 0;
+  }
+
+  &__meta {
+    display: flex;
+    flex-direction: column;
+    min-width: 0; // Prevents text from pushing outside the flex container
+  }
+
+  &__name {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 2px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  &__product {
+    font-size: 0.6rem;
+    font-weight: 800;
+    color: #a0a0a0;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+}

@@ -64,41 +64,23 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
-// Buttons
+// Components
 @import "components/buttons";
+@import "components/ingredient-card";
+@import "components/fan-card";
 
-// Announcement
-@import "components/announcement";
-
-// Navigation
-@import "components/navigation";
-
-// Hero
+// Sections
 @import "components/hero";
-
-// Routine
 @import "components/routine";
-
-// Results
 @import "components/results";
-
-// One Minute
 @import "components/one-minute";
-
-// Benefits
 @import "components/benefits";
-
-// Product Set
 @import "components/product-set";
-
-// Ingredients
 @import "components/ingredients";
-
-// Formulas
 @import "components/formulas";
-
-// Fan Testimonials
 @import "components/fan-testimonials";
 
-// Footer
+// Global
+@import "components/announcement";
+@import "components/navigation";
 @import "components/footer";
